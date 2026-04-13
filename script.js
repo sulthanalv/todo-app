@@ -6,6 +6,9 @@ function tampilkanTugas() {
     let list = document.getElementById("list");
     list.innerHTML = "";
 
+    document.getElementById("jumlah").innerText =
+    "Jumlah Tugas: " + todos.length;
+
     for (let i = 0; i < todos.length; i++) {
         list.innerHTML += `
         <li>
